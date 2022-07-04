@@ -1,0 +1,89 @@
+
+h1{
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ font-size: 35px;
+ color: red
+
+}
+hr{
+    width: 600px;
+    height: 4px;
+    background-color: rgb(12, 149, 229);
+    align-items: center;
+}
+ #board{
+    width: 450px;
+    height: 450px;
+    background-color:aliceblue;
+   
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .box{
+    width: 147px;
+    height: 147px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .horizontal{
+border-bottom: 4px solid rgb(12, 149, 229);
+
+ }
+ .vertical{
+    border-right: 4px solid rgb(12, 149, 229);
+ }
+ .winner{
+    background-color: lightgray;
+    color: red;
+ }
+ .popup{
+   visibility: hidden;
+}
+.popup.active{
+   visibility:visible;
+}
+#div{
+   margin-top: 10px;
+   margin-left: 70%;
+}
+button{
+position:relative;
+padding: 15px;
+left: 20px;
+background-color:white;
+color:#ba1b46;
+font-weight: 400;
+font-size: 20px;
+border: 3px solid #ba1b46;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-radius: 100px;
+transition: 0.5s;
+}
+button:hover{
+   box-shadow: 0 2px 10px 0 #ba1b46 inset,0 2px 10px 0 #ba1b46,
+                0 2px 10px 0 #ba1b46 inset,0 2px 10px 0 #ba1b46;
+}
+
+
+ /* celebration */
+#my-canvas{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 100000;
+   visibility: hidden;
+   pointer-events: none;
+
+}
+#my-canvas.active{
+   visibility:visible;
+   
+}
